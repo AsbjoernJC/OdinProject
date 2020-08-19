@@ -10,4 +10,5 @@ for word in l:
         fl.append(word)
 
 for word in fl:
-    open("D:\\The odin project\\Applied Accessibility\\" + word + ".html", "w")
+    #f = open("D:\\The odin project\\Applied Accessibility\\" + word + ".html", "w")
+    #f.write("<!-- -->")
