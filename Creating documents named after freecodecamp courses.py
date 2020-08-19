@@ -1,4 +1,4 @@
-læs = open("D:\\Odinprojectlists\\AA.txt")
+læs = open("D:\\Odinprojectlists\\RWDP.txt")
 l = læs.readlines()
 
 fl = []
@@ -10,5 +10,5 @@ for word in l:
         fl.append(word)
 
 for word in fl:
-    #f = open("D:\\The odin project\\Applied Accessibility\\" + word + ".html", "w")
-    #f.write("<!-- -->")
+    f = open("D:\\The odin project\\Responsive Web Design Principles\\" + word + ".html", "w")
+    f.write("<!--\n\n-->")
