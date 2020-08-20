@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Importing font -->
+<link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asbjørn J.C</title>
+</head>
+
+<style>
+    .welcome-section {
+      background: #000;
+      background-image: linear-gradient(
+          75deg,
+          #3a3d40 0%,
+          #181719 100%
+      );
+      color: #f0f0f0;
+      font-size: 4rem;
+      font-weight: 700;
+      grid-area: header;
+      text-align: center;
+    }
+
+    h1 {
+        color: #f0f0f0;
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: "Raleway", sans-serif;
+    }
+  
+    .projects {
+      background: PaleTurquoise;
+      grid-area: content;
+      grid-template-columns: auto auto auto;
+      display: grid;
+    }
+  
+    .footer {
+      background: lightpink;
+      grid-area: footer;
+    }
+  
+    .container {
+      font-size: 1.5em;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px auto 1fr auto;
+      grid-gap: 0px;
+      grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    }
+  
+    @media (min-width: 300px){
+      .container{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+      }
+    }
+  
+    @media (min-width: 400px){
+      .container{
+        grid-template-areas:
+        /* Only change code below this line */
+          "header header"
+          "content content"
+          "footer footer";
+        /* Only change code above this line */
+      }
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .itemOne {
+      background: PaleGreen;
+    }
+  
+    .itemTwo {
+      background: BlanchedAlmond;
+    }
+/* Se på hvor body er placeret ift. at h1 skal have font-family Raleway i stedet for poppins */
+</style>
+<body>       
+  <div class="container">
+    <div class="welcome-section">Asbjørn J.C</div>
+    <div class="projects">Project 1
+        <div class="itemOne">Project 2</div>
+        <div class="itemTwo">Project 3</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+
+</html>
