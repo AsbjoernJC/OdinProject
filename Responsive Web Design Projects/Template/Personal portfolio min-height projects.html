@@ -31,13 +31,19 @@
     font-weight: 700;
     grid-area: header;
     text-align: center;
-    height: 2.5em;
+    height: 4.5em;
   }
+
+  /* Er ikke self-adjusting */
   h1 {
       color: #f0f0f0;
       font-size: 4rem;
       font-weight: 700;
       font-family: "Raleway", sans-serif;
+      position: relative;
+      text-align: center;
+      top: 5rem;
+
   }
 
 
@@ -89,6 +95,7 @@
   body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
+      line-height: 1.4;
   }
   
   .itemOne {
@@ -154,8 +161,17 @@
 .projects {
     background: PaleTurquoise;
     grid-area: content;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
     display: grid;
+    min-height: 320px;
+  }
+
+  #p-welcome {
+      font-size: 1rem;
+      color: #be3144;
+      position: relative;
+      bottom: 4.5rem;
+
   }
 </style>
 
@@ -177,7 +193,10 @@
         </ul>
     </nav>
   <!-- Welcome section -->
-    <div class="welcome-section">Asbjørn J.C</div>
+    <div class="welcome-section">
+        <h1> Asbjørn J.C </h1> <br>
+        <p id="p-welcome">Learning Python and interested in C#</p>
+    </div>
 
 
   <!-- Project section -->
@@ -190,15 +209,15 @@
     <!-- Maybe a section at the bottom -->
     <div class="footer">footer</div>
   </div>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  <h1>H</h1>
-  
+  <h2>A</h2>
+  <h2>A</h2>
+  <h2>A</h2>
+  <h2>A</h2>
+  <h2>A</h2>
+  <h2>A</h2>
+  <h2>A</h2>  
+  <h2>A</h2>
+  <h2>A</h2>
 </body>
 
 </html>
