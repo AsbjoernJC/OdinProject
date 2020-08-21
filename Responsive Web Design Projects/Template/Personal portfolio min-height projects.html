@@ -161,9 +161,9 @@
 .projects {
     background: PaleTurquoise;
     grid-area: content;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 2rem));;
     display: grid;
-    min-height: 320px;
+    ;
   }
 
   #p-welcome {
@@ -172,6 +172,11 @@
       position: relative;
       bottom: 4.5rem;
 
+  }
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
   }
 </style>
 
@@ -200,8 +205,10 @@
 
 
   <!-- Project section -->
-    <div class="projects" id="projects">Project 1
-        <div class="itemOne">Project 2</div>
+    <div class="projects" id="projects">
+        <div class="itemOne">Project 2
+            <img class="project-image" src="https://previews.dropbox.com/p/thumb/AA4KQ5-q5oy_VLbhao6Bwy_ZS-V00QRJ_XgwqkHDvfWyQ_x-01c-9Sart9b1Lcv8Wp3L-PlTo-5bVkwMppL2NN3gag00aNFosf0yQd_PRmKrwYkA1KleBMBPBOFFDHAy1gITEgb6IvEkRf33ogxvbOjdvaMXvVJwGg4dIxN0nwauhcwzrtSHfuZJ-3Eb9oeWfpuAJWpjHVcHrcUuzO7OnYbVyTWNugdQvPxf-4YjicO6FIGpiYJ1FhQSELAS2Qerg04XFjmMJ_Hvw1eOP5c55VHjPcJ29rB0nWnWl5jKTkB1wEnuYj3k8zifFAeIBwJd0z-oqvy5wDlRdKFTL2yIRHTu_YxDOf-eQkZk4Yt2nzcDCA/p.png?fv_content=true&size_mode=5">
+        </div>
         <div class="itemTwo">Project 3</div>
     </div>
     <!-- Contact section -->
