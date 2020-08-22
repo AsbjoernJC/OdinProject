@@ -36,20 +36,20 @@
   }
 
   #p-welcome {
-      font-size: 1rem;
+      font-size: 1.3rem;
       color: #be3144;
       position: relative;
-      bottom: 4.5rem;
+      bottom: 7.5rem;
   }
   /* Er ikke self-adjusting */
   h1 {
       color: #f0f0f0;
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: 700;
       font-family: "Raleway", sans-serif;
       position: relative;
       text-align: center;
-      top: 5rem;
+      top: 3rem;
 
   }
 
@@ -113,7 +113,7 @@
     /* nav */
   
     .nav {
-    width: 120.875rem;
+    width: 100%;
     background: #be3144;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
@@ -211,7 +211,7 @@
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: #be3144;
   }
   
   .project-image {
@@ -219,14 +219,22 @@
     width: 100%;
     object-fit: cover;
   }
-  
-  .project-title {
-    font-size: 62.5%;
-    padding: 2rem 0.5rem;
-  }
 
   img {
     display: block;
+  }
+    
+  .project-title {
+    grid-area: project-title;
+    color: #f0f0f0;
+  }
+
+  .project-tile {
+    grid-template-areas: "image"
+                          "project-title";
+  }
+  a {
+    text-decoration: none;
   }
 </style>
 
@@ -258,7 +266,7 @@
   
   <!-- Projects section -->
 <section id="projects" class="projects-section">
-  <h2 class="projects-section-header">These are some of my projects</h2> <!-- Should have a line below-->
+  <h2 class="projects-section-header">My projects</h2> <!-- Should have a line below-->
   <div class="projects-grid">
     <a
       href="https://codepen.io/freeCodeCamp/full/zNqgVx"
