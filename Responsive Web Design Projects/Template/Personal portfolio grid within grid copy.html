@@ -218,6 +218,12 @@
     height: calc(100% - 5rem);
     width: 100%;
     object-fit: cover;
+
+  }
+
+  .NotetoQuizlet-image {
+    object-fit: cover;
+    object-position: left;
   }
 
   img {
@@ -256,9 +262,9 @@
         </ul>
     </nav>
   <!-- Welcome section -->
-    <div class="welcome-section">
+    <div class="welcome-section" id="welcome-section">
         <h1> Asbjørn J.C </h1> <br>
-        <p id="p-welcome">Learning Python and interested in JavaScript and C#</p>
+        <p id="p-welcome">Learning Python and interested in C#, C++ and JavaScript</p>
     </div>
 
     <!-- Contact section -->
@@ -274,13 +280,14 @@
       class="project project-tile"
     >
       <img
-        class="project-image"
+        class="project-image NotetoQuizlet-image"
         src="https://previews.dropbox.com/p/thumb/AA4KQ5-q5oy_VLbhao6Bwy_ZS-V00QRJ_XgwqkHDvfWyQ_x-01c-9Sart9b1Lcv8Wp3L-PlTo-5bVkwMppL2NN3gag00aNFosf0yQd_PRmKrwYkA1KleBMBPBOFFDHAy1gITEgb6IvEkRf33ogxvbOjdvaMXvVJwGg4dIxN0nwauhcwzrtSHfuZJ-3Eb9oeWfpuAJWpjHVcHrcUuzO7OnYbVyTWNugdQvPxf-4YjicO6FIGpiYJ1FhQSELAS2Qerg04XFjmMJ_Hvw1eOP5c55VHjPcJ29rB0nWnWl5jKTkB1wEnuYj3k8zifFAeIBwJd0z-oqvy5wDlRdKFTL2yIRHTu_YxDOf-eQkZk4Yt2nzcDCA/p.png?fv_content=true&size_mode=5"
         alt="project"
+        id="NotetoQuizlet"
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        Tribute Page
+        NotetoQuizlet
         <span class="code">&#47;&gt;</span>
       </p>
     </a>
@@ -366,6 +373,8 @@
     </a>
   </div>
 </section>
+
+<!-- Contact section -->
 </body>
 
 </html>
